@@ -1,0 +1,240 @@
+        header {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 98%;
+            height: 80%;
+            padding-top: 1%;
+            padding-left: 1%;
+            padding-right: 1%;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+            background-color: transparent;
+            z-index: 1;
+        }
+        
+        img:not(#contact, #burger) {
+            transition: 0.5s ease-in-out;
+            padding-left: 0.7em;
+            z-index: 6;
+        }
+        
+        img:hover:not(#partenaires) {
+            opacity: 90%;
+            transform: scale(1.05);
+        }
+        
+        img.capsule {
+            position: relative;
+            width: auto;
+            height: 3.8em;
+            animation: 20s logocapsule infinite;
+            z-index: 1;
+        }
+        
+        img.ulamir {
+            position: absolute;
+            left: 0;
+            width: auto;
+            height: 3.8em;
+            animation: 20s logoulamir infinite;
+            z-index: 0;
+        }
+        
+        img.home {
+            width: 4em;
+            height: 4em;
+            opacity: 80%;
+            z-index: 6;
+        }
+        
+        img#contact {
+            width: 4em;
+            height: 4em;
+            opacity: 80%;
+        }
+        
+        img.lock {
+            width: 4em;
+            height: 4em;
+            opacity: 75%;
+        }
+        
+        img#burger {
+            align-self: flex-start;
+            justify-self: flex-end;
+            width: 3em;
+            padding: 0.7em;
+            opacity: 75%;
+        }
+        
+        .menu_container {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 40%;
+            z-index: 5;
+        }
+        
+        img#burger:active~.menu_container {
+            display: block;
+            width: 100%;
+            height: 40%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            padding-top: 6.5%;
+            display: grid;
+            grid-template: 1fr 1fr 1fr/repeat(33%);
+            grid-template-areas: "un deux trois quatre" "cinq six sept huit";
+            z-index: 5;
+        }
+        
+        .menu_container:hover {
+            display: block;
+            width: 100%;
+            height: 40%;
+            display: grid;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            padding-top: 6.5%;
+            grid-template: 1fr 1fr/repeat(33%);
+            grid-template-areas: "un deux trois quatre" "cinq six sept huit";
+            z-index: 5;
+        }
+        
+        div a {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            font-size: 3em;
+            text-decoration: none;
+            font-family: signika, filson, verdana, sans-sérif;
+            text-align: center;
+            color: white;
+            background-size: 10em;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: 0.5s ease;
+        }
+        
+        .lien1:hover,
+        .lien2:hover,
+        .lien3:hover,
+        .lien4:hover,
+        .lien5:hover,
+        .lien6:hover,
+        .lien7:hover,
+        .lien8:hover {
+            background-color: darkgrey;
+            background-blend-mode: difference;
+        }
+        
+        a.lien1 {
+            grid-area: un;
+            background-color: #253237;
+            animation: 10s ease-in-out bgcolor infinite;
+        }
+        
+        a.lien2 {
+            grid-area: deux;
+            background-color: #5C6B73;
+            animation: 15s ease-in-out bgcolor infinite;
+        }
+        
+        a.lien3 {
+            grid-area: trois;
+            background-color: #9DB4C0;
+            animation: 17s ease-in-out bgcolor infinite;
+        }
+        
+        a.lien4 {
+            grid-area: quatre;
+            background-color: #C2DFE3;
+            color: #253237;
+            animation: 13s ease-in-out bgcolor infinite;
+        }
+        
+        a.lien5 {
+            grid-area: cinq;
+            background-color: #5C6B73;
+            animation: 12s ease-in-out bgcolor infinite;
+        }
+        
+        a.lien6 {
+            grid-area: six;
+            background-color: #E0FBFC;
+            color: #253237;
+            animation: 18s ease-in-out bgcolor infinite;
+        }
+        
+        a.lien7 {
+            grid-area: sept;
+            background-color: #394549;
+            animation: 4s ease-in-out bgcolor infinite;
+        }
+        
+        a.lien8 {
+            grid-area: huit;
+            background-color: #253237;
+            animation: 13s ease-in-out bgcolor infinite;
+        }
+        
+        @keyframes bgcolor {
+            0% {
+                filter: invert(0);
+            }
+            50% {
+                filter: invert(0.2);
+            }
+            100% {
+                filter: invert(0);
+            }
+        }
+        
+        @media screen and (max-width: 850px) {
+            body {
+                overflow: auto;
+            }
+            div a {
+                font-size: 1.5em;
+                height: 50%;
+            }
+            div a:hover {
+                background-size: 14em;
+            }
+            .menu_container {
+                display: none;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                overflow: visible;
+                z-index: 5;
+            }
+            .menu_container:hover {
+                display: block;
+                width: 100%;
+                height: 25em;
+                display: flex;
+                flex-flow: column nowrap;
+                overflow: auto;
+                position: absolute;
+                left: 0;
+                top: 5%;
+                right: 0;
+                bottom: 0;
+                padding-top: 20%;
+            }
+        }

@@ -1,0 +1,33 @@
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size: 3em;
+        background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, lime 14.28%, aqua 21.42%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+        background-size: 600vw 600vw;
+        -webkit-animation: "color", "intro" 20s infinite linear forwards;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    h2 {
+        font-size: 2em;
+        animation: 20s ease intro infinite forwards;
+    }
+    h3 {
+        font-size: 1em;
+        animation: 20s ease intro infinite forwards;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    h1 {
+        font-size: 1.8em;
+        animation: 20s ease intro infinite forwards;
+    }
+    h2 {
+        font-size: 1em;
+        animation: 20s ease intro infinite forwards;
+    }
+    h3 {
+        font-size: 0.8em;
+        animation: 20s ease intro infinite forwards;
+    }
+}

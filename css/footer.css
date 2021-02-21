@@ -1,0 +1,65 @@
+footer {
+    position: absolute;
+    left: 0;
+    top: 86%;
+    right: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    width: 250%;
+    height: 15%;
+    background-color: transparent;
+    animation: 25s slideLogo infinite;
+    overflow: hidden;
+    z-index: 1;
+}
+
+footer:hover {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    z-index: 1;
+}
+
+footer img {
+    width: 6em;
+    height: auto;
+    margin-left: 0.6em;
+}
+
+@media screen and (max-width: 650px) {
+    footer {
+        top: 88%;
+        width: 400%;
+        height: 10%;
+        animation: 25s slideLogoSmall infinite;
+    }
+    footer img {
+        width: 4em;
+        height: auto;
+    }
+}
+
+@media screen and (max-height: 350px) {
+    footer {
+        top: 80%;
+        width: 400%;
+        height: 20%;
+        animation: 25s slideLogoSmall infinite;
+    }
+    img {
+        transform: scale(0.7);
+    }
+}

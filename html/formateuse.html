@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formateuse</title>
+    <meta name="description" content="La capsule est un chantier d'insertion numérique porté par l'ULAMIR-CPIE pays de Morlaix.">
+    <link rel="icon" type="image/png" href="../img/lacapsule_favicon.png" />
+    <link rel="stylesheet" href="../css/pages.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="#"><img class="capsule" src="../img/capsule.png" /></a>
+        <a href="#"><img class="ulamir" src="../img/ulamir.png" /></a>
+        <a href="../index.html"><img class="home" src="../img/home.png" /></a>
+        <a href="../php/contact.php"><img id="contact" src="../img/contact.png" /></a>
+        <img id="burger" src="../img/burger.png" />
+        <div class="menu_container">
+            <a href="chantier.html" class="lien1">Chantier</a>
+            <a href="reemploi.html" class="lien2">Réemploi</a>
+            <a href="ateliers.html" class="lien3">Ateliers</a>
+            <a href="projets.html" class="lien4">Projets</a>
+            <a href="../php/blog.php" class="lien5">Blog</a>
+            <a href="../php/goupil/index.php" class="lien6">Démo</a>
+            <a href="presse.html" class="lien7">Presse</a>
+            <a href="partenaires.html" class="lien8">Partenaires</a>
+        </div>
+    </header>
+    <div class="content">
+        <div class="video_formateuse">
+            <video autoplay="true" loop="true" intrinsicsize="true" preload="auto" muted="true">
+                <source src="video/video_formateuse.mp4" type="video/mp4">
+                <source src="video/video_formateuse.webm" type="video/webm">
+                    Il serait temps de mettre votre navigateur a jour ! 
+            </video>
+        </div>
+
+
+
+        <div class="text1 ">
+            <h1 class="title">Projet</h1>
+            <p> L’équipe a souhaité pouvoir effacer puis reformater les disques durs, directement chez les donateurs. nous avons réfléchi à la conversion d'une armoire métallique de bureau. Nous avons donc modélisé ce meuble en 3D pour imaginer comment nous
+                allions l'utiliser. Nous avons décidé de réaliser ce projet en utilisant du matériel reconditionné/ de récupération. </p>
+        </div>
+
+        <div class="photos1">
+            <img src="img/armoire_clonage.png" alt="">
+        </div>
+
+        <div class="text2">
+            <h1 class="title">Prototypage</h1>
+            <p> Dès lors, je me suis positionné sur le projet, étant passionné de hardware. Le principal problème que j'ai rencontré fut le risque de surchauffe, dû au confinement des composants. Pour pallier à ce problème, un test a consisté à faire un certain
+                nombre de clonages avec les tours d'origine, positionnées dans le meuble. Une centaine de disques ont été clonés en 1 mois dans ces conditions, et en utilisation, nous avons un delta T de 10°c. (différence de chaleur entre la température
+                extérieure et l'intérieure, en l’occurrence, 10 degrés de plus à l'intérieur.)</p>
+
+        </div>
+        <div class="photos2">
+            <img src="img/armoire_clonage2.png" alt="">
+        </div>
+        <div class="text3">
+            <h1 class="title">Contraintes</h1>
+            <p>Suite à ce test, je me suis rendu compte que la surchauffe provenait principalement des disques durs et de la conductivité électrique de l'armoire, pouvant endommager les cartes mères une fois sortie de leur boîtier.</p>
+        </div>
+        <div class="photos3">
+            <img src="img/capture_clonage.png" alt="">
+        </div>
+        <div class="text4">
+            <h1 class="title">Réalisation</h1>
+            <h2> Étape 1: </h2>
+            <h3> L’ossature interne qui supportera le tout. J'ai utilisé des rails de placo coupés en 2 dimensions distinctes, utilisant les chutes pour créer des cales. J'ai donc créé 9 emplacements réservés :</h3><br>
+            <p>
+                <h3> - 3 pour les cartes mères. </h3>
+                <h3> - 3 pour les blocs d'alimentation.</h3>
+                <h3> - 3 pour les disques durs.</h3>
+            </p>
+            <p>Pour éviter les risques de court-circuit entre les soudures des cartes mères et les rails de placo, j’ai fixé des morceaux de mousse isolante entre ceux-ci.</p>
+            <p>
+                <h2> Étape 2: </h2>
+                <h3> Ergonomie. Afin d'éviter tout contact avec l'intérieur du meuble, le bouton d'alimentation, les témoins, ainsi que les branchement USB et SATA ont été prolongés pour permettre leur usage à l'extérieur de l'armoire. </h3>
+            </p>
+            <p>
+                <h2> Étape 3: </h2>
+                <h3>Positionnement des écrans. Je suis parti sur un système de pieds fait maison, composés de rails de placo et chevrons de bois. Ceci permet une bonne rigidité, une fixation sur l'arrière de l’armoire et de les enlever au besoin.
+                </h3>
+            </p>
+            <p>
+                <h2> Étape 4: </h2>
+                <h3> Les possibilités d'utilisations.</h3>
+                <h3> Une fois finie, l'armoire peut permettre plusieurs types d'usages :</h3>
+                <h3> - La réparation de disques durs. (DOSFSCK/CHKDSK)</h3>
+                <h3> - Le clonage de disques ou de partitions simultanément. (CLONEZILLA/DD)</h3>
+                <h3> - La purge de disques par réécriture. (DBAN/SHRED) </h3>
+                <h3>- La récupération de données. (TESTDISK) </h3>
+            </p>
+        </div>
+    </div>
+    <footer></footer>
+</body>
+
+</html>
